@@ -5,7 +5,7 @@ This repository provides a Radial Equivalent Independent (REI) method for power 
 The model uses the PowerModels.jl package for power network analysis and integrates partitioning and reduction techniques to simplify the network. The main script use_rei.jl demonstrates the reduction process and provides numerical comparison between the original and reduced networks.
 
 ## Repository Structure
-The repository is organized into the following structure:
+The repository is organised into the following structure:
 ```
 Network_Reduction/
 │ 
@@ -24,24 +24,26 @@ Network_Reduction/
 │ │ └── case6.m                 Example input files
 │ │ └── case39.m                Example input files
 │ │ └── case118.m               Example input files
-│ └── use_rei.jl                Example script to run the REI reduction
+│ └── use_rei.jl                Script to run the REI reduction
 │ └── README.md                 Documentation and instructions
 ```
 ## Model Overview
 + Implements the REI Method for power network reduction.
-+ Uses PowerModels.jl to handle network data and optimization.
++ Uses PowerModels.jl to handle network data and optimisation.
 + Partitions the power network into zones and reduces it to an equivalent smaller model.
-+ Provides tools to:
-+ Run Optimal Power Flow (OPF) for both original and reduced networks.
-+ Implements the REI Method for power network reduction.
-+ Uses PowerModels.jl to handle network data and optimization.
-+ Partitions the power network into zones and reduces it to an equivalent smaller model.
++ Provides tools to run Optimal Power Flow (OPF) for both original and reduced networks. 
 
 ## Required Packages
 Before running the model, ensure the following Julia packages are installed:
 
-+ **PowerModels.jl:** Power system optimization and analysis
++ **PowerModels.jl:** Power system optimisation and analysis
 + **Ipopt.jl:** Non-linear optimisation solver for OPF
-+ **LinearAlgebra.jl:** 
-+ **SparseArrays.jl:** Enables efficient representation and manipulation of sparse matrices, which are critical for modeling large-scale power system networks with sparsely connected nodes.
++ **LinearAlgebra.jl:** Tools for matrix operations and linear algebra
++ **SparseArrays.jl:** Efficient handling of sparse matrices for large networks
+## How to Run the Model
++ First, download or clone this repository to your local system
++ Navigate to the examples folder.
++ Parse a MATPOWER case file (e.g., case118.m).
++ Execute the use_rei.jl file
++ Perform the REI-based network reduction.
 
